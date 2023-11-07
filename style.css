@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(247, 198, 234, 0.7), rgba(255, 211, 248, 0.7)),
+    url(img/Premium\ Vector\ _\ Vector\ abstract\ colorful\ background\ blurred\ gradient\ pastel\ colors\ palette\ for\ wallpaper\ soft\ gradient\ in\ peach\ nude\ and\ pinkxa.jfif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+.nama {
+    color:rgb(118, 163, 206);
+    float: left;
+    font-size: 30px;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #C46977;
+}
+nav img{
+    width: 50px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:  10px 25px;
+    position: relative;
+}   
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fd95de;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.banner {
+    text-align: center;
+}
+.banner img {
+    border-radius: 100px;
+    height: 150px;
+    border: 2px solid rgb(118, 163, 206);
+    margin-top: 10px;
+}
+
+.banner h1{
+    color:  #C46977;
+    font-family: cursive;
+    margin-top: 10px;
+    font-size: 50px;
+    margin: 20px 0 20px;
+}
+.banner h4{
+    color:rgb(118, 163, 206);
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+h3{
+    color: ;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.banner p{
+    font-size: 20px;
+    color:  #83025c;
+}
+.banner button{
+    background-color:rgb(243, 220, 224);
+    color: rgb(167, 158, 189);
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid rgb(59, 95, 128);
+    width: 400px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;  
+}
+.banner button:hover{
+    background-color: rgb(59, 95, 128);
+    border: 2px solid rgb(167, 158, 189);
+    color: rgb(243, 220, 224);
+}
+h4 span::before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color:  white;
+    font-size: 25px;
+}
+@keyframes gerak {
+    0%{
+        content: "Welcome!!";   
+    }
+
+    50%{
+        content: "its me sweetiegirl";   
+    }
+
+    100%{
+        content: "thank u for see my web";   
+    }
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fd95de;
+    background: #fd95de;
+    transition: 1s;
+}
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: white ;
+}
+.about-me{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-me img {
+    height: auto;
+    width: 430px;
+    border-radius: 10px;
+}
+.about-text {
+    width: 550px;
+}
+.about-me h2 {
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(118, 163, 206) ;
+}
+.about-text h5{
+    color:black ;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-me p{
+    color:black ;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+.button {
+    background-color:pink ;
+    color: black;
+    border: 2px solid #83025c;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 5s;
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid #83025c;
+    cursor: pointer;
+}
+.deskripsi {
+    text-align: center;
+    width: 100%;
+    background-image: url(img/gambar12.jfif);
+    background-position: center;
+    background-size: cover;
+    color: black;
+    margin-top: 10px;
+    align-content: center;
+}
+.deskripsi h2 {
+    text-align: center;
+    color:pink; 
+    margin-top: 100px;
+    font-size: 50px;
+    align-content: center;
+}
+.kolom p{
+    font-family: 'comic sans ms';
+    color:rgb(131, 40, 82);
+}
+.tutor-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.kartu-tutor{
+    width: 20%;
+    margin: 0 auto;
+}
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+.kartu-tutor p {
+    font-weight: 700;
+    font-family: 'comic sans ms';
+    font-size: 15px;
+    text-align: center;
+    color:rgb(131, 40, 82);
+}
+.tengah h1 {
+    text-align: center;
+    color:rgb(141, 67, 79); 
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+.tengah {
+    text-align: center;
+    color: rgb(131, 40, 82);
+    margin-top: 50px;
+    align-content: center;
+}
+
+.kuliah, .selfcare, .organisasi {
+    width: 300px;
+    height: 320px;
+    background-color: pink;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+}
+.kuliah:hover, .selfcare:hover, .organisasi:hover {
+    background-color: rgb(131, 40, 82);
+    color: pink;
+}
+.kuliah img {
+    width: 60%;
+    border-radius: 50%;
+}
+.selfcare img {
+    width: 60%;
+    border-radius: 50%;
+}
+.organisasi img {
+    width: 60%;
+    border-radius: 50%;
+}
+.tengah h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+.contact-me{
+    min-height: 90vh;
+    width: 100%;
+    padding: 10px 0;
+    background-image: url(img/gambar12.jfif);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact-text h2{
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-me span {
+    color: rgb(131, 40, 82);
+}
+.contact-box{
+    color: black;
+}
+.contact-box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.contact {
+    width: 25%;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.contact h4 {
+    color: rgb(131, 40, 82);
+    padding-bottom: 10px;
+    font-size: 20px;
+    font: bold;
+}
+.contact p {
+    font-size: 16px;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: rgb(131, 40, 82);
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color:rgb(131, 40, 82);
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.sosial {
+    display: flex;
+}
+.sosial a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+    border-radius: 50px;
+    margin: 22px 10px;
+    color: white;
+    border: 2px solid rgb(131, 40, 82);
+}
+.sosial a:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+    border: 2px solid plum ;
+}
+.end {
+    position: absolute;
+    color:rgb(131, 40, 82) ;
+    bottom: 60px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90px;
+    }
+    .nama h2{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links {
+        width: 100%;
+        margin: 0;
+    } 
+    .nav-links ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+    .nav-links ul li {
+        display: inline-block;
+        float: none;
+    }
+    .section {
+        display: block;
+    }
+    .section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .kartu-tutor {
+        width: 50%;
+    }
+    .kuliah, .selfcare, .organisasi {
+        width: 50%;
+    }
+    .contact {
+        width: 50%;
+    }
+    .about-me{
+        width: 50%;
+    }
+}
+
